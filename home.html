@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="src/output.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+
 </head>
 
 <body class="bg-slate-800">
@@ -28,7 +32,7 @@
     <!-- navbar end -->
 
     <!-- Hero Section Start -->
-    <div class="w-full relative">
+    <div class="container-xl relative">
         <div
             class="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-start z-30 px-[20px] lg:px-[80px] md:px-[80px] gap-3">
             <div class="text-white text-[24px] lg:text-[48px] lg:font-semibold md:text-[36px]">Duty After School</div>
@@ -56,10 +60,184 @@
             </div>
         </div>
         <div class="w-full relative lg:h-[600px]">
-            <img class="w-full lg:absolute " src="img/film/hero2.png" alt="">
+            <img class="w-full lg:absolute lg:max-h-[580px]" src="img/film/hero2.png" alt="">
         </div>
     </div>
     <!-- Hero Section End -->
+
+    <!-- Corousel Start -->
+    <div class="w-full bg-slate-900 p-[20px]">
+        <div class="font-semibold text-white text-[20px]">
+            Melanjutkan Tonton Film
+        </div>
+        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-2000 ease-in-out" data-carousel-item>
+                    <img src="img/film/c1.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-2000 ease-in-out" data-carousel-item="active">
+                    <img src="img/film/c2.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-2000 ease-in-out" data-carousel-item>
+                    <img src="img/film/c3.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-2000 ease-in-out" data-carousel-item>
+                    <img src="img/film/c4.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="img/film/c2.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="w-full bg-red-700 p-[20px]">
+        <div class="font-semibold text-white text-[20px]">
+            Melanjutkan Tonton Film
+        </div>
+        <div class="carousel w-full flex flex-row-1 lg:gap-x-[24px] lg:flex">
+            <!-- List Film Start -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div
+                    class="w-[302px] h-[162px] bg-[url('/img/film/c1.png')] bg-cover bg-no-repeat bg-top mx-auto relative">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="flex h-full justify-between items-end p-[16px] font-semibold text-[14px] text-white">
+                        <p>Don't Look Up</p>
+                        <div class="flex gap-2 items-center">
+                            <img class="w-[12px]" src="img/stars.svg" alt="">
+                            <p>4.5/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List Film End -->
+            <!-- List Film Start -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div
+                    class="w-[302px] h-[162px] bg-[url('/img/film/c2.png')] bg-cover bg-no-repeat bg-top mx-auto relative">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="flex h-full justify-between items-end p-[16px] font-semibold text-[14px] text-white">
+                        <p>Don't Look Up</p>
+                        <div class="flex gap-2 items-center">
+                            <img class="w-[12px]" src="img/stars.svg" alt="">
+                            <p>4.5/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List Film End -->
+            <!-- List Film Start -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div
+                    class="w-[302px] h-[162px] bg-[url('/img/film/c3.png')] bg-cover bg-no-repeat bg-top mx-auto relative">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="flex h-full justify-between items-end p-[16px] font-semibold text-[14px] text-white">
+                        <p>Don't Look Up</p>
+                        <div class="flex gap-2 items-center">
+                            <img class="w-[12px]" src="img/stars.svg" alt="">
+                            <p>4.5/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List Film End -->
+            <!-- List Film Start -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div
+                    class="w-[302px] h-[162px] bg-[url('/img/film/c4.png')] bg-cover bg-no-repeat bg-top mx-auto relative">
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    <div class="flex h-full justify-between items-end p-[16px] font-semibold text-[14px] text-white">
+                        <p>Don't Look Up</p>
+                        <div class="flex gap-2 items-center">
+                            <img class="w-[12px]" src="img/stars.svg" alt="">
+                            <p>4.5/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List Film End -->
+        </div>
+    </div>
+
+
+
+    <!-- <div class="w-full block bg-slate-900 text-white p-[20px]">
+        <div class="flex">
+            <p class="font-semibold text-[20px] mb-[20px]">Melanjutkan Tonton Film</p>
+        </div>
+        <div class="flex w-full relative">
+            <div class="w-full h-full flex flex-col-reverse absolute z-30 justify-start items-start p-[16px]">
+                <div class="flex justify-between">
+                    <div class="">
+                        <div class="text-white font-semibold">Don't Look Up</div>
+                    </div>
+                    <div class="flex font-semibold text-white text">
+                        <d>*</d>
+                        <d>4.5/5</d>
+                    </div>
+                </div>
+            </div>
+            <img src="img/film/c1.png" alt="">
+        </div>
+    </div> -->
+    <!-- Corousel End -->
+
+
+    <!-- Flowbite JS -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 
 </html>
