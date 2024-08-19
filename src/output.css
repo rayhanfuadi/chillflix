@@ -1115,16 +1115,8 @@ input:checked + .toggle-bg {
   left: 50%;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
 .right-0 {
   right: 0px;
-}
-
-.right-5 {
-  right: 1.25rem;
 }
 
 .start-0 {
@@ -1240,10 +1232,6 @@ input:checked + .toggle-bg {
   height: 12px;
 }
 
-.h-\[162px\] {
-  height: 162px;
-}
-
 .h-\[20px\] {
   height: 20px;
 }
@@ -1286,10 +1274,6 @@ input:checked + .toggle-bg {
 
 .w-\[20px\] {
   width: 20px;
-}
-
-.w-\[302px\] {
-  width: 302px;
 }
 
 .w-\[530px\] {
@@ -1441,6 +1425,21 @@ input:checked + .toggle-bg {
        column-gap: 12px;
 }
 
+.gap-x-\[20px\] {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
+.gap-x-\[8px\] {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1453,6 +1452,10 @@ input:checked + .toggle-bg {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded-full {
@@ -1548,6 +1551,11 @@ input:checked + .toggle-bg {
   background-color: rgb(61 65 66 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-blue-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(28 100 242 / var(--tw-bg-opacity));
@@ -1577,9 +1585,9 @@ input:checked + .toggle-bg {
   background-color: rgb(17 24 39 / 0.5);
 }
 
-.bg-red-700 {
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(200 30 30 / var(--tw-bg-opacity));
+  background-color: rgb(24 26 28 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
@@ -1609,28 +1617,17 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 131 248 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
 
 .bg-\[url\(\'\/img\/daftar\.jpg\'\)\] {
   background-image: url('/img/daftar.jpg');
-}
-
-.bg-\[url\(\'\/img\/film\/c1\.png\'\)\] {
-  background-image: url('/img/film/c1.png');
-}
-
-.bg-\[url\(\'\/img\/film\/c2\.png\'\)\] {
-  background-image: url('/img/film/c2.png');
-}
-
-.bg-\[url\(\'\/img\/film\/c3\.png\'\)\] {
-  background-image: url('/img/film/c3.png');
-}
-
-.bg-\[url\(\'\/img\/film\/c4\.png\'\)\] {
-  background-image: url('/img/film/c4.png');
 }
 
 .bg-\[url\(\'\/img\/masuk\.jpg\'\)\] {
@@ -1659,6 +1656,11 @@ input:checked + .toggle-bg {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-0 {
@@ -1748,6 +1750,16 @@ input:checked + .toggle-bg {
   padding-bottom: 14px;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1758,10 +1770,6 @@ input:checked + .toggle-bg {
 
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.text-\[14px\] {
-  font-size: 14px;
 }
 
 .text-\[20px\] {
@@ -1786,12 +1794,20 @@ input:checked + .toggle-bg {
   line-height: 1.25rem;
 }
 
+.text-\[14px\] {
+  font-size: 14px;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
@@ -2152,12 +2168,8 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:flex {
-    display: flex;
+  .lg\:mb-\[32px\] {
+    margin-bottom: 32px;
   }
 
   .lg\:h-\[24px\] {
@@ -2172,16 +2184,16 @@ input:checked + .toggle-bg {
     height: 44px;
   }
 
+  .lg\:h-\[590px\] {
+    height: 590px;
+  }
+
   .lg\:h-\[600px\] {
     height: 600px;
   }
 
   .lg\:h-auto {
     height: auto;
-  }
-
-  .lg\:max-h-\[580px\] {
-    max-height: 580px;
   }
 
   .lg\:w-\[24px\] {
@@ -2210,6 +2222,11 @@ input:checked + .toggle-bg {
          column-gap: 40px;
   }
 
+  .lg\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .lg\:px-\[80px\] {
     padding-left: 80px;
     padding-right: 80px;
@@ -2218,6 +2235,16 @@ input:checked + .toggle-bg {
   .lg\:py-\[24px\] {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .lg\:py-\[32px\] {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .lg\:py-\[40px\] {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .lg\:text-\[16px\] {
@@ -2230,6 +2257,10 @@ input:checked + .toggle-bg {
 
   .lg\:text-\[48px\] {
     font-size: 48px;
+  }
+
+  .lg\:text-\[14px\] {
+    font-size: 14px;
   }
 
   .lg\:font-semibold {

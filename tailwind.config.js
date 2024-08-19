@@ -8,6 +8,9 @@ module.exports = {
     extend: {
        backgroundImage: {
         'bg-pattern': "url('/img/masuk.jpg')",
+       },
+       colors:{
+        primary: '#181A1C',
        }
     },
   },
