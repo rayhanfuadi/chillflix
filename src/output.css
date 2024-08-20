@@ -1167,6 +1167,14 @@ input:checked + .toggle-bg {
   margin-top: 28px;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1269,6 +1277,10 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[94px\] {
+  width: 94px;
 }
 
 .flex-1 {
@@ -1393,6 +1405,14 @@ input:checked + .toggle-bg {
   gap: 36px;
 }
 
+.gap-\[1px\] {
+  gap: 1px;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
 .gap-x-\[12px\] {
   -moz-column-gap: 12px;
        column-gap: 12px;
@@ -1403,6 +1423,18 @@ input:checked + .toggle-bg {
        column-gap: 8px;
 }
 
+.gap-y-\[200px\] {
+  row-gap: 200px;
+}
+
+.gap-y-\[20px\] {
+  row-gap: 20px;
+}
+
+.gap-y-\[6px\] {
+  row-gap: 6px;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1411,10 +1443,6 @@ input:checked + .toggle-bg {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.\!overflow-visible {
-  overflow: visible !important;
 }
 
 .overflow-y-hidden {
@@ -1667,6 +1695,10 @@ input:checked + .toggle-bg {
   padding: 40px;
 }
 
+.p-\[28px\] {
+  padding: 28px;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1727,6 +1759,16 @@ input:checked + .toggle-bg {
   padding-bottom: 20px;
 }
 
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1767,6 +1809,14 @@ input:checked + .toggle-bg {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-medium {
@@ -2143,6 +2193,10 @@ input:checked + .toggle-bg {
     margin-top: 80px;
   }
 
+  .lg\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2215,12 +2269,29 @@ input:checked + .toggle-bg {
     width: 95%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
+  }
+
   .lg\:content-center {
     align-content: center;
   }
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-\[36px\] {
+    gap: 36px;
   }
 
   .lg\:\!gap-x-\[28px\] {
@@ -2237,8 +2308,8 @@ input:checked + .toggle-bg {
          column-gap: 40px;
   }
 
-  .lg\:\!overflow-hidden {
-    overflow: hidden !important;
+  .lg\:gap-y-\[8px\] {
+    row-gap: 8px;
   }
 
   .lg\:text-nowrap {
@@ -2248,6 +2319,10 @@ input:checked + .toggle-bg {
   .lg\:object-cover {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .lg\:p-\[40px\] {
+    padding: 40px;
   }
 
   .lg\:px-\[80px\] {
@@ -2270,6 +2345,16 @@ input:checked + .toggle-bg {
     padding-bottom: 60px;
   }
 
+  .lg\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lg\:py-\[14px\] {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
   .lg\:text-\[16px\] {
     font-size: 16px;
   }
@@ -2284,6 +2369,10 @@ input:checked + .toggle-bg {
 
   .lg\:text-\[48px\] {
     font-size: 48px;
+  }
+
+  .lg\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .lg\:font-semibold {
